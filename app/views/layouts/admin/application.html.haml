@@ -4,11 +4,11 @@
     %meta{ "http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
     %title= t(:crm_admin_page)
     == <!-- #{controller.controller_name} : #{controller.action_name} -->
-    = stylesheet_link_tag "screen", "modalbox.css", :cache => "cache/all"
+    = stylesheet_link_tag "screen", "modalbox.css"
     %style= yield :styles
 
-    = javascript_include_tag :defaults, :cache => "cache/all"
-    = javascript_include_tag "crm_classes.js", "modalbox.js", :cache => "cache/classes"
+    = javascript_include_tag :defaults
+    = javascript_include_tag "crm_classes.js", "modalbox.js"
     %script{:type => "text/javascript"}= yield :javascript
 
   %body.admin
